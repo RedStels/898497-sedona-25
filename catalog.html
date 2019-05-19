@@ -13,10 +13,10 @@
         <img src="img/logo-sedona.svg" width="153" height="153" alt="Логотип City of «Sedona»">
       </a>
       <ul class="site-navigation">
-        <li><a href="">Информация</a></li>
-        <li><a href="">Фото и видео</a></li>
-        <li><a href="">Карта штата</a></li>
-        <li><a href="">Гостиницы</a></li>
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+        <li><a href="#">Карта штата</a></li>
+        <li><a href="#">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -44,10 +44,10 @@
           </div>
           <div class="box-rate">
             <ul>
-              <li><img src="#" alt=""></li>
-              <li><img src="#" alt=""></li>
-              <li><img src="#" alt=""></li>
-              <li><img src="#" alt=""></li>
+              <li><img src="img/star.svg" alt="Заезда рейтинга"></li>
+              <li><img src="img/star.svg" alt="Заезда рейтинга"></li>
+              <li><img src="img/star.svg" alt="Заезда рейтинга"></li>
+              <li><img src="img/star.svg" alt="Заезда рейтинга"></li>
             </ul>
             <b>Рейтинг: 8,5</b>
           </div>
@@ -68,9 +68,9 @@
           <div class="box-rate">
             <b>Рейтинг: 8,9</b>
             <ul>
-              <li><img src="#" alt=""></li>
-              <li><img src="#" alt=""></li>
-              <li><img src="#" alt=""></li>
+              <li><img src="img/star.svg" alt="Звезда рейтинга"></li>
+              <li><img src="img/star.svg" alt="Звезда рейтинга"></li>
+              <li><img src="img/star.svg" alt="Звезда рейтинга"></li>
             </ul>
           </div>
         </li>
@@ -90,8 +90,8 @@
           <div class="box-rate">
             <b>Рейтинг: 9,2</b>
             <ul>
-              <li><img src="#" alt=""></li>
-              <li><img src="#" alt=""></li>
+              <li><img src="img/star.svg" alt="Звезда рейтинга"></li>
+              <li><img src="img/star.svg" alt="Звезда рейтинга"></li>
             </ul>
           </div>
         </li>
@@ -110,13 +110,36 @@
     <p class="footer-copyright">
       <b>Website by</b>
       <a class="button" href="https://htmlacademy.ru">
-        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt=""></a>
+        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTMLакадемии"></a>
     </p>
   </footer>
+  
   <section class="modal modal-login">
-    <p>Дата заезда</p>
-    <!-- Здесь будет форма -->
-    <span class="modal-close">x</span>
+    <form class="hotel-finder" method="post" action="https://echo.htmlacademy.ru">
+      <p>
+        <label for="arrival_date">Дата въезда</label>
+        <input type="text" id="arrival_date" name="date-arrival" value="24 апреля 2017">
+        <button class="calendar" type="button" aria-label="Календарь"></button>
+      </p>
+      <p>
+        <label for="unarrival-date">Дата выезда</label>
+        <input type="text" id="unarrival-date" name="date-unarrival" value="4 июля 2017">
+        <button class="calendar" type="button" aria-label="Календарь"></button>
+      </p>
+      <p>
+        <label for="adults">Взрослые</label>
+        <button type="button" aria-label="Убрать человека">-</button>
+        <input type="number" id="adults" name="adults">
+        <button type="button" aria-label="Добавить челока">+</button>
+      </p>
+      <p>
+        <label for="children">Дети</label>
+        <button type="button" aria-label="Убрать ребёнка">-</button>
+        <input type="number" id="children" name="children">
+        <button type="button" aria-label="Добавить ребёнка">+</button>
+      </p>
+      <button type="submit">Найти</button>
+    </form>
   </section>
 </body>
 
