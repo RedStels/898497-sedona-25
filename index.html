@@ -24,7 +24,6 @@
     <h1 class="visually-hidden">Туристический городок «Sedona»</h1>
     <section>
       <img src="img/index-welcome.svg" width="153" height="153" alt="Welcome to the gorgeous «Sedona»">
-      <img src="img/intro-mask.svg" width="153" height="153" alt="треугольнички">
       <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
@@ -33,6 +32,31 @@
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <a class="button" href="#">Поиск гостиницы в седоне</a>
+      <form class="hotel-finder" method="post" action="https://echo.htmlacademy.ru">
+        <p>
+          <label for="arrival_date">Дата въезда</label>
+          <input type="text" id="arrival_date" name="date-arrival" value="24 апреля 2017">
+          <button class="calendar" type="button" aria-label="Календарь"></button>
+        </p>
+        <p>
+          <label for="unarrival-date">Дата выезда</label>
+          <input type="text" id="unarrival-date" name="date-unarrival" value="4 июля 2017">
+          <button class="calendar" type="button" aria-label="Календарь"></button>
+        </p>
+        <p>
+          <label for="adults">Взрослые</label>
+          <button type="button" aria-label="Убрать человека">-</button>
+          <input type="number" id="adults" name="adults">
+          <button type="button" aria-label="Добавить челока">+</button>
+        </p>
+        <p>
+          <label for="children">Дети</label>
+          <button type="button" aria-label="Убрать ребёнка">-</button>
+          <input type="number" id="children" name="children">
+          <button type="button" aria-label="Добавить ребёнка">+</button>
+        </p>
+        <button type="submit">Найти</button>
+      </form>
     </section>
   </main>
   <footer class="main-footer">
@@ -50,34 +74,6 @@
         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt=""></a>
     </p>
   </footer>
-  
-  <section class="modal modal-login">
-    <form class="hotel-finder" method="post" action="https://echo.htmlacademy.ru">
-      <p>
-        <label for="arrival_date">Дата въезда</label>
-        <input type="text" id="arrival_date" name="date-arrival" value="24 апреля 2017">
-        <button class="calendar" type="button" aria-label="Календарь"></button>
-      </p>
-      <p>
-        <label for="unarrival-date">Дата выезда</label>
-        <input type="text" id="unarrival-date" name="date-unarrival" value="4 июля 2017">
-        <button class="calendar" type="button" aria-label="Календарь"></button>
-      </p>
-      <p>
-        <label for="adults">Взрослые</label>
-        <button type="button" aria-label="Убрать человека">-</button>
-        <input type="number" id="adults" name="adults">
-        <button type="button" aria-label="Добавить челока">+</button>
-      </p>
-      <p>
-        <label for="children">Дети</label>
-        <button type="button" aria-label="Убрать ребёнка">-</button>
-        <input type="number" id="children" name="children">
-        <button type="button" aria-label="Добавить ребёнка">+</button>
-      </p>
-      <button type="submit">Найти</button>
-    </form>
-  </section>
 </body>
 
 </html>
