@@ -4,13 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
-        <img src="img/logo-sedona.svg" width="153" height="153" alt="Логотип City of «Sedona»">
+        <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип City of «Sedona»">
       </a>
       <ul class="site-navigation">
         <li><a href="">Информация</a></li>
@@ -22,24 +25,24 @@
   </header>
   <main class="container">
     <h1 class="visually-hidden">Туристический городок «Sedona»</h1>
-    <section>
-      <img src="img/index-welcome.svg" width="153" height="153" alt="Welcome to the gorgeous «Sedona»">
+    <section class="welcome">
+      <img class="gorgeous" src="img/index-welcome.svg" width="459" height="353" alt="Welcome to the gorgeous «Sedona»">
       <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
     <!-- основной контент из 5 пунктов -->
-    <section>
+    <section class="hotel-search">
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <a class="button" href="#">Поиск гостиницы в седоне</a>
       <form class="hotel-finder" method="post" action="https://echo.htmlacademy.ru">
         <p>
-          <label for="arrival_date">Дата въезда</label>
+          <label for="arrival_date">Дата въезда:</label>
           <input type="text" id="arrival_date" name="date-arrival" value="24 апреля 2017">
           <button class="calendar" type="button" aria-label="Календарь"></button>
         </p>
         <p>
-          <label for="unarrival-date">Дата выезда</label>
+          <label for="unarrival-date">Дата выезда:</label>
           <input type="text" id="unarrival-date" name="date-unarrival" value="4 июля 2017">
           <button class="calendar" type="button" aria-label="Календарь"></button>
         </p>
@@ -55,22 +58,22 @@
           <input type="number" id="children" name="children">
           <button type="button" aria-label="Добавить ребёнка">+</button>
         </p>
-        <button type="submit">Найти</button>
+        <button class="button-2" type="submit">Найти</button>
       </form>
     </section>
   </main>
   <footer class="main-footer">
     <p class="footer-logo">#VisitSedona</p>
-    <div class="footer-social">
+     <div class="footer-social">
       <ul>
-        <li><a class="social-button" href="#"><img src="img/twitter.svg" alt="Twitter" width="50" height="50"></a></li>
-        <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Facebook" width="50" height="50"></a></li>
-        <li><a class="social-button" href="#"><img src="img/youtube.svg" alt="YouTube" width="50" height="50"></a></li>
+        <li><a class="social-button" href="#"><img src="img/twitter.svg" alt="Twitter" width="17" height="15"></a></li>
+        <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Facebook" width="17" height="15"></a></li>
+        <li><a class="social-button" href="#"><img src="img/youtube.svg" alt="YouTube" width="17" height="15"></a></li>
       </ul>
     </div>
     <p class="footer-copyright">
       <b>Website by</b>
-      <a class="button" href="https://htmlacademy.ru">
+      <a href="https://htmlacademy.ru">
         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt=""></a>
     </p>
   </footer>
