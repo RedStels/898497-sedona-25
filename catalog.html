@@ -10,16 +10,16 @@
 </head>
 
 <body class="inner-page">
-  <header class="main-header">
+  <header class="main-header container">
     <nav class="main-navigation">
       <a class="main-header-logo">
-        <img src="img/logo-sedona.svg" width="153" height="153" alt="Логотип City of «Sedona»">
+        <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип City of «Sedona»">
       </a>
       <ul class="site-navigation">
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
+        <li><a href="">Информация</a></li>
+        <li><a href="">Фото и видео</a></li>
+        <li><a href="">Карта штата</a></li>
+        <li><a href="">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -29,12 +29,12 @@
       <h2 class="visually-hidden">Форма поиска отелей</h2>
       <!-- Тут будет форма гостиниц -->
     </section>
-    <article class="hotels-list">
+    <article class="hotels">
       <h2 class="visually-hidden">Выбор подходящих отелей</h2>
-      <ul>
-        <li>
+      <ul class="hotel-list">
+        <li class="hotel-item">
           <img src="img/amara-resort-&-spa.jpg" alt="Amara Resort & Spa.">
-          <div>
+          <div class="hotel-description">
             <h3>Amara Resort & Spa</h3>
             <div>
               <p>Гостиница</p>
@@ -47,17 +47,18 @@
           </div>
           <div class="box-rate">
             <ul>
-              <li class="box-rate-item"><img src="img/star.svg" alt="Заезда рейтинга"></li>
-              <li class="box-rate-item"><img src="img/star.svg" alt="Заезда рейтинга"></li>
-              <li class="box-rate-item"><img src="img/star.svg" alt="Заезда рейтинга"></li>
-              <li class="box-rate-item"><img src="img/star.svg" alt="Заезда рейтинга"></li>
+              <li class="box-rate-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                  <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" /></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                  <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" /></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                  <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" /></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                  <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" /></svg></li>
             </ul>
             <b>Рейтинг: 8,5</b>
           </div>
         </li>
-        <li>
+        <li class="hotel-item">
           <img src="img/desert-quail-inn.jpg" alt="Desert Quail Inn">
-          <div>
+          <div class="hotel-description">
             <h3>Desert Quail Inn</h3>
             <div>
               <p>Мотель</p>
@@ -69,17 +70,18 @@
             </div>
           </div>
           <div class="box-rate">
-            <b>Рейтинг: 8,9</b>
             <ul>
-              <li class="box-rate-item"><img src="img/star.svg" alt="Звезда рейтинга"></li>
-              <li class="box-rate-item"><img src="img/star.svg" alt="Звезда рейтинга"></li>
-              <li class="box-rate-item"><img src="img/star.svg" alt="Звезда рейтинга"></li>
+              <li class="box-rate-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                  <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" /></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                  <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" /></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                  <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" /></svg></li>
             </ul>
+            <b>Рейтинг: 8,9</b>
           </div>
         </li>
-        <li>
+        <li class="hotel-item">
           <img src="img/villas-at-poco-diablo.jpg" alt="Villas at Poco Diablo.">
-          <div>
+          <div class="hotel-description">
             <h3>Villas at Poco Diablo</h3>
             <div>
               <p>Аппартаменты</p>
@@ -91,30 +93,38 @@
             </div>
           </div>
           <div class="box-rate">
-            <b>Рейтинг: 9,2</b>
             <ul>
-              <li class="box-rate-item"><img src="img/star.svg" alt="Звезда рейтинга"></li>
-              <li class="box-rate-item"><img src="img/star.svg" alt="Звезда рейтинга"></li>
+              <li class="box-rate-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                  <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" /></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                  <path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" /></svg></li>
             </ul>
+            <b>Рейтинг: 9,2</b>
           </div>
         </li>
       </ul>
     </article>
   </main>
   <footer class="main-footer">
-    <p class="footer-logo">#VisitSedona</p>
-    <div class="footer-social">
-      <ul>
-        <li class="footer-item"><a class="social-button" href="#"><img src="img/twitter.svg" alt="Twitter" width="17" height="15"></a></li>
-        <li class="footer-item"><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Facebook" width="17" height="15"></a></li>
-        <li class="footer-item"><a class="social-button" href="#"><img src="img/youtube.svg" alt="YouTube" width="17" height="15"></a></li>
-      </ul>
+    <div class="container">
+      <p class="footer-logo">#VisitSedona</p>
+      <div class="footer-social">
+        <ul>
+          <li class="footer-item"><a class="social-button" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
+                <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" /></svg>
+            </a></li>
+          <li class="footer-item"><a class="social-button" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+                <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" /></svg></a></li>
+          <li class="footer-item"><a class="social-button" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
+                <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z" /></svg>
+            </a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        <b>Website by</b>
+        <a href="https://htmlacademy.ru">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt=""></a>
+      </p>
     </div>
-    <p class="footer-copyright">
-      <b>Website by</b>
-      <a href="https://htmlacademy.ru">
-        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTMLакадемии"></a>
-    </p>
   </footer>
 </body>
 
