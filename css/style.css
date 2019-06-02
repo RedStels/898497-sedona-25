@@ -226,7 +226,7 @@ a {
   padding-left: 70px;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-right: 0px;
+  padding-right: 70px;
   background-color: white;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
@@ -235,15 +235,12 @@ a {
 .hotel-item img {
   width: 135px;
   height: 95px;
-  padding: 30px;
 }
 
  
 .box-rate {
-  margin: 0;
   margin-top: 30px;
   margin-left: auto;
-  margin-right: 70px;
   text-align: center;
 }
 
@@ -270,56 +267,46 @@ a {
 
 
 
-
-.main-footer  {
-  margin-top: 0px;
-  padding: 0px 0;
-  background-color: white;
-}
-
 .main-footer .container {
   display: flex;
 }
 
+.main-footer  {
+  background-color: white;
+}
+
 .footer-logo {
-  width: 240px;
-  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  margin-top: 50px;
-  margin-left: 70px;
-  margin-bottom: 50px;
-
 }
 
-.footer-social {
-  width: 145px;
-  margin: 0 auto;
 
+.footer-social {
+  width: 400px;
 }
 
 .footer-social ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 141px;
-  margin: 0 auto;
-  padding: 0;
-  
+  justify-content: center;
+  width: 400px; 
+  padding-left: 0; 
   list-style: none;
 }
 
-.footer-social b {
-  display: block;
-  margin-bottom: 15px;
+.footer-item {
+  padding: 5px;
 }
 
 .social-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
   width: 43px;
   height: 43px;
 
@@ -346,17 +333,16 @@ a {
 
 .footer-copyright {
   display: flex;
-  width: 240px;
-  margin-top: 40px;
-  margin-right: 70px;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .footer-copyright b {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  margin-right: 10px;
-  margin-top: 5px;
 }
 
 .footer-copyright .button:hover,
