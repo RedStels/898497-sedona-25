@@ -27,46 +27,105 @@
     <h1 class="visually-hidden">Туристический городок «Sedona»</h1>
     <section class="welcome">
       <img class="gorgeous" src="img/index-welcome.svg" width="459" height="353" alt="Welcome to the gorgeous «Sedona»">
-      <div class="description-bg ">
-        <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      </div>
     </section>
-    <!-- основной контент из 5 пунктов -->
-    <section class="hotel-search">
-      <div class="hotel-search-warapper">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a class="button-search" href="#">Поиск гостиницы в седоне</a>
-        <form class="hotel-finder" method="post" action="https://echo.htmlacademy.ru">
-          <p>
-            <label for="arrival_date">Дата въезда:</label>
-            <input type="text" id="arrival_date" name="date-arrival" value="24 апреля 2017">
-            <button class="calendar" type="button" aria-label="Календарь"></button>
-          </p>
-          <p>
-            <label for="unarrival-date">Дата выезда:</label>
-            <input type="text" id="unarrival-date" name="date-unarrival" value="4 июля 2017">
-            <button class="calendar" type="button" aria-label="Календарь"></button>
-          </p>
-          <p>
-            <label for="adults">Взрослые</label>
-            <button type="button" aria-label="Убрать человека">-</button>
-            <input type="number" id="adults" name="adults">
-            <button type="button" aria-label="Добавить челока">+</button>
-          </p>
-          <p>
-            <label for="children">Дети</label>
-            <button type="button" aria-label="Убрать ребёнка">-</button>
-            <input type="number" id="children" name="children">
-            <button type="button" aria-label="Добавить ребёнка">+</button>
-          </p>
+    <section class="reasons-sedona">
+      <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+       <!-- основной контент из 5 пунктов -->
+    </section>
+   
+    <section class="hotels-search-wrapper">
+      <div class="hotels-search-title">
+        <h3 class="section-title">Заинтересовались?</h3>
+        <p>Укажите предполагаемые даты поездки,
+          <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      </div>
+      <button type="submit" class="search-form-button">поиск гостиницы в седоне</button>
+      <div class="modal modal-hotels-search">
+        <form class="hotels-search" method="post" action="https://echo.htmlacademy.ru">
+          <div class="form-wrapper">
+            <div class="date-item">
+              <label for="arrival-date">Дата заезда:</label>
+              <input type="text" name="dateofaarival" id="arrival-date" value="24 апреля 2017">
+              <span class="visually-hidden">кнопка календаря</span>
+              <button class="calendar-button">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve" fill="#cacaca">
+                  <g>
+                    <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
+            c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
+            c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
+            C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
+            c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
+            c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
+            v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z" />
+                    <rect x="4.594" y="8.225" width="2.625" height="2.066" />
+                    <rect x="4.594" y="11.668" width="2.625" height="2.067" />
+                    <rect x="4.594" y="15.112" width="2.625" height="2.066" />
+                    <rect x="9.188" y="15.112" width="2.625" height="2.066" />
+                    <rect x="9.188" y="11.668" width="2.625" height="2.067" />
+                    <rect x="9.188" y="8.225" width="2.625" height="2.066" />
+                    <rect x="13.781" y="15.112" width="2.625" height="2.066" />
+                    <rect x="13.781" y="11.668" width="2.625" height="2.067" />
+                    <rect x="13.781" y="8.225" width="2.625" height="2.066" />
+                  </g>
+                </svg>
+              </button>
+            </div>
+            <div class="date-item">
+              <label for="departure-date">Дата выезда:</label>
+              <input type="text" name="dateofdeparture" id="departure-date" value="4 июля 2017">
+              <span class="visually-hidden">кнопка календаря</span>
+              <button class="calendar-button">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve" fill="#cacaca">
+                  <g>
+                    <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
+          c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
+          c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
+          C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
+          c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
+          c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
+          v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z" />
+                    <rect x="4.594" y="8.225" width="2.625" height="2.066" />
+                    <rect x="4.594" y="11.668" width="2.625" height="2.067" />
+                    <rect x="4.594" y="15.112" width="2.625" height="2.066" />
+                    <rect x="9.188" y="15.112" width="2.625" height="2.066" />
+                    <rect x="9.188" y="11.668" width="2.625" height="2.067" />
+                    <rect x="9.188" y="8.225" width="2.625" height="2.066" />
+                    <rect x="13.781" y="15.112" width="2.625" height="2.066" />
+                    <rect x="13.781" y="11.668" width="2.625" height="2.067" />
+                    <rect x="13.781" y="8.225" width="2.625" height="2.066" />
+                  </g>
+                </svg>
+              </button>
+            </div>
+            <div class="visitors-count-wrapper">
+              <div class="visitors-count adults">
+                <label for="adults-count">Взрослые:</label>
+                <div class="plusminus-wrapper">
+                  <button class="count-button minus-button" type="button" name="adultsminuscount">Минус</button>
+                  <input type="text" name="numberofadults" id="adults-count" value="2">
+                  <button class="count-button plus-button" type="button" name="adultspluscount">Плюс</button>
+                </div>
+              </div>
+              <div class="visitors-count childrens">
+                <label for="childrens-count">Дети:</label>
+                <div class="plusminus-wrapper">
+                  <button class="count-button minus-button" type="button" name="childrensminuscount">Минус</button>
+                  <input type="text" name="numberofchildrens" id="childrens-count" value="0">
+                  <button class="count-button plus-button" type="button" name="childrensspluscount">Плюс</button>
+                </div>
+              </div>
+            </div>
+          </div>
           <button class="hotels-search-button" type="submit">Найти</button>
         </form>
       </div>
     </section>
+    <section class="mapofsedona">
+      <span class="visually-hidden">Седона на карте</span>
+    </section>
   </main>
-  <footer class="main-footer footer-on-content">
+  <footer class="main-footer footer-transparent">
     <div class="container">
       <p class="footer-logo">#VisitSedona</p>
       <div class="footer-social">
