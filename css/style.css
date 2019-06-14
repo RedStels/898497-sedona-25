@@ -430,8 +430,6 @@ input[type="radio"].visually-hidden {
   color: #333;
 }
 
-
-
 /*Hotel form*/
 .hotels-search-wrapper {
   position: relative;
@@ -439,7 +437,6 @@ input[type="radio"].visually-hidden {
   min-height: 260px;
   text-align: center;
   margin: 0 auto;
-
 }
 
 .hotels-search-title {
@@ -1361,5 +1358,3 @@ input[type="radio"].visually-hidden {
     transform: translateY(0);
   }
 }
-
-
