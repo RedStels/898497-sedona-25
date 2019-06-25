@@ -7,7 +7,6 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <script href="css/script.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -217,20 +216,8 @@
       </footer>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
-<script>
-document.querySelector(".search-form-button").addEventListener("click", function(event) {
-  event.preventDefault();
 
-  var modal = document.querySelector(".modal");
-
-  if (modal.classList.contains("modal-show")) {
-    modal.classList.remove("modal-show");
-  } else {
-    modal.classList.add("modal-show");
-  }
-});
-
-</script>
 
 </html>
