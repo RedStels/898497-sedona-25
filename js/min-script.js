@@ -1,0 +1,1 @@
+document.querySelector(".search-form-button").addEventListener("click",function(a){a.preventDefault();var b=document.querySelector(".modal");b.classList.contains("modal-show")?b.classList.remove("modal-show"):b.classList.add("modal-show")});

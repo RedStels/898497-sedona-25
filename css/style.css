@@ -47,9 +47,6 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   background-color: #f2f2f2;
 }
-
-
-
 /*buttons*/
 .button {
   font: inherit;
@@ -402,6 +399,7 @@ input[type="radio"].visually-hidden {
 
 .services-title-bottom {
   width: 150px;
+  min-height: 40px;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -439,7 +437,7 @@ input[type="radio"].visually-hidden {
 }
 
 .section-text {
-  padding: 10px 0px 0px 0px;
+  padding: 8px 0px 0px 0px;
 }
 
 .search-form-button {
@@ -474,7 +472,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   border: none;
   box-shadow: -16px 7px 15px 0 rgba(0, 1, 1, 0.15);
-  display: block;
+  display: none;
   animation: bounce 0.6s;
   animation-duration: 0.4s;
 }
@@ -488,11 +486,12 @@ input[type="radio"].visually-hidden {
   height: 395px;
   padding-left: 55px;
   padding-right: 55px;
-
 }
 
 .modal-show { 
-  display: none;
+  display: block;
+  animation: bounce 0.6s;
+  animation-duration: 0.4s;  
 }
 
 .hotels-search {
@@ -994,13 +993,15 @@ input[type="radio"].visually-hidden {
   justify-content: flex-start;
   list-style: none;
   margin: 0;
-  margin-left: 7px;
+  margin-left: 6px;
   padding: 0;
+  padding-top: 1px;
 }
 
 .sorting-types a {
   color: rgba(0, 0, 0, 0.3);
-  text-decoration: underline dotted #81b3d2;
+  text-decoration: none;
+  border-bottom: 1px #81b3d2 dotted;
   text-align: left;
   margin-left: 33px;
 }
@@ -1016,7 +1017,7 @@ input[type="radio"].visually-hidden {
 
 .sorting-types a:active {
   color: #81b3d2;
-  text-decoration: none;
+  border-bottom: none;
 }
 
 .sorting-types {
@@ -1026,7 +1027,8 @@ input[type="radio"].visually-hidden {
 
 .active a {
   color: #81b3d2;
-  text-decoration: none;
+
+  border-bottom: none;
 }
 
 .sorting-buttons {
@@ -1147,7 +1149,7 @@ input[type="radio"].visually-hidden {
 
 .hotel-info p {
   padding: 0;
-  margin-top: 4px;
+  margin-top: 3px;
   margin-bottom: 16px;
 }
 
