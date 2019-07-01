@@ -43,7 +43,7 @@ input[type="radio"].visually-hidden {
 
 }
 .grey-bg {
-  width: 1280px;
+  width: 100%;
   margin: 0 auto;
   background-color: #f2f2f2;
 }
